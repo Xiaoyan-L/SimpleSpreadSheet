@@ -44,7 +44,6 @@ const getSumDataByIDs = formula => {
       sum += value;
     }
   }
-  console.log(sum);
 
   return sum + "";
 };

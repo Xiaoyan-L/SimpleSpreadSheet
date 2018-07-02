@@ -1,7 +1,7 @@
-const SpreadSheetController = require("./controllers/SpreadSheetController");
+const {index, getData, update} = require("./controllers");
 
 module.exports = app => {
-  app.get("/data", SpreadSheetController.index);
-  app.get("/data/:cellID", SpreadSheetController.getData);
-  app.post("/data/:cellID", SpreadSheetController.update);
+  app.get("/data", index);
+  app.get("/data/:cellID", getData);
+  app.post("/data/:cellID", update);
 };
