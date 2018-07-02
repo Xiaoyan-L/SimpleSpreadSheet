@@ -1,12 +1,12 @@
 import React from "react";
-import Col from "./Col";
+import Cell from "./Cell";
 
 const Row = props => {
   return (
     <tr>
       <td className="text-center text-white bg-info">{props.row + 1}</td>
       {props.data.map((ele, idx) => (
-        <Col
+        <Cell
           key={idx}
           row={props.row}
           col={idx}

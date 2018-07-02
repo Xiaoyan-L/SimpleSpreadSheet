@@ -4,7 +4,7 @@ import { testColumn, testNumber } from "../../../../utils/RegexTest";
 import simpleCaculator from "../../../../utils/Caculator";
 import { Popover, PopoverBody } from "reactstrap";
 
-class Col extends Component {
+class Cell extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -158,4 +158,4 @@ class Col extends Component {
   }
 }
 
-export default Col;
+export default Cell;
